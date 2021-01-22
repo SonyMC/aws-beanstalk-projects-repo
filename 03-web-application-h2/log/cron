@@ -1,0 +1,4 @@
+Jan  6 13:24:45 ip-172-31-80-205 crond[3031]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 38% if used.)
+Jan  6 13:24:45 ip-172-31-80-205 crond[3031]: (CRON) INFO (running with inotify support)
+Jan  6 13:30:02 ip-172-31-80-205 CROND[3672]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Jan  6 13:30:02 ip-172-31-80-205 CROND[3673]: (root) CMD (/opt/elasticbeanstalk/bin/publishlogs -type publish)

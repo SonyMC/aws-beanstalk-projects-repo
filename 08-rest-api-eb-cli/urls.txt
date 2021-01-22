@@ -1,0 +1,29 @@
+get: http://localhost:5000/jpa/users/SonyMathew/todos
+
+post: http://localhost:5000/jpa/users/SonyMathew/todos
+{
+  "id": 10001,
+  "username": "SonyMathew",
+  "description": "Learn JPA",
+  "targetDate": "2021-01-01T12:30:22.512+0000",
+  "isDone": false
+}
+
+
+put: http://localhost:5000/jpa/users/SonyMathew/todos/1
+
+{
+  "id": 10001,
+  "username": "SonyMathew",
+  "description": "Learn JPA",
+  "targetDate": "2021-01-01T12:30:22.512+0000",
+  "isDone": true
+}
+
+
+h2-console:
+elastic-beanstalk uri/h2-console
+E.g: http://restapisonymathewdev-env.eba-avfhuvij.us-east-1.elasticbeanstalk.com/h2-console
+
+The jdbc url to be providedin the login console is : jdbc:h2:mem:testdb
+Thsi is the url that is used by Springboot to connect to h2 

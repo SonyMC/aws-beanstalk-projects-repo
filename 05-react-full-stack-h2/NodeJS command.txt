@@ -1,0 +1,25 @@
+(1) Check version of nodeJS: 
+	- cmd: node -v
+
+(2) Check version of npm:
+	- cmd: npm -v
+
+(3) Compiling a nodeJS project :
+	- open cmd in the project folder 
+	- cmd: npm install
+
+(4) Running a nodejs project:
+	- cmd: npm start
+
+(5) Fix vunerabilites:
+	- cmd: npm audit fix 
+
+
+(6)Report vunerabilities:
+	- cmd : npm audit
+
+(7) Do a production build:
+	- cmd: npm run build
+
+
+ 

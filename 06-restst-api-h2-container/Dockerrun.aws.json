@@ -1,0 +1,12 @@
+{
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"Name": "mailsonymathew/06-todo-rest-api-h2-containerized:1.0.0.RELEASE",
+		"Update": "true"
+	},
+	"Ports": [
+		{
+			"ContainerPort": "5000"
+		}
+	]
+}

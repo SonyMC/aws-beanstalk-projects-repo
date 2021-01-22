@@ -1,0 +1,59 @@
+(1) To run mysql instance ( check tag from 'https://hub.docker.com/_/mysql'):
+	- cmd: docker run msql:5.7
+
+(2)Once mysql has been downloaded, it will ask for a roo password before starting . This can be passed as an environment variable.
+	- cmd: docker run -e MYSQL_ROOT_PASSWORD=dummypassword mysql:5.7 
+
+(3) Setting up all environmnet variable for mysql:
+	- cmd: docker run -e MYSQL_ROOT_PASSWORD=dummypassword -e MYSQL_DATABASE=sony_todos -e MYSQL_USER=buddy -e MYSQL_PASSWORD=buddy mysql:5.7 
+
+(4) Setting up all environmnet variable for mysql and run in detached mode( which menas that the container will not be linke dto the cmd terminal. i.e we can shutdown teh terminal and teh container will still run).
+	- cmd: docker run -d -e MYSQL_ROOT_PASSWORD=dummypassword -e MYSQL_DATABASE=sony_todos -e MYSQL_USER=buddy -e MYSQL_PASSWORD=buddy mysql:5.7
+	- Note : here we have not published the port which wil cause a problem later on when we try to connect to db using mysql shell.
+	
+
+(5)Setting up all environmnet variable for mysql , publish port and run in detached mode( which menas that the container will not be linke dto the cmd terminal. i.e we can shutdown teh terminal and teh container will still run).
+	- cmd: docker run -d -e MYSQL_ROOT_PASSWORD=dummypassword -e MYSQL_DATABASE=todos -e MYSQL_USER=todos-user -e MYSQL_PASSWORD=dummytodos -p 3306:3306 mysql:5.7
+	- long cmd:docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:5.7
+
+
+
+(6) Check available containers:
+	- cmd: docker container list
+
+(7) Connect to mysql container:
+	- cmd: docker exec -it 666d47 mysql -uroot -p   -> Here 666d47 is the container id 
+	- type in teh root password when asked for  
+
+(8) Image name as found in Eclipse log:
+[INFO] Successfully built 4e695757e146
+[INFO] Successfully tagged mailsonymathew/06-todo-rest-api-h2-containerized:1.0.0.RELEASE
+[INFO] 
+[INFO] Detected build of image with id 4e695757e146
+[INFO] Successfully built mailsonymathew/06-todo-rest-api-h2-containerized:1.0.0.RELEASE
+
+(9) Run image: 
+	cmd: docker run -d -p 5000:5000 mailsonymathew/06-todo-rest-api-h2-containerized:1.0.0.RELEASE
+
+
+(10) Building a package: 
+	- If do not want conflists with older versions of jars, images etc. instead of 'package' use 'clean package'. Mvn will do a clean package. 
+
+(12) url sample after launcing cotnainer from AWS bean stalk:
+	- http://dockerawsrestapi-env.eba-e5pp8drc.us-east-1.elasticbeanstalk.com/
+	- get : http://dockerawsrestapi-env.eba-e5pp8drc.us-east-1.elasticbeanstalk.com/jpa/users/in28minutes/todos
+	- post: http://dockerawsrestapi-env.eba-e5pp8drc.us-east-1.elasticbeanstalk.com/jpa/users/in28minutes/todos 
+		{
+  "username": "in28minutes",
+  "description": "Learn to Drive a Car",
+  "targetDate": "2030-11-09T10:49:23.566+0000",
+  "done": false
+}
+
+(13) Running a docker container which talks to another docker container. Here mySQlcontainner will be linked to teh todos REST api container as follows : 
+	- Run a mysql container : docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:5.7
+	- The sql container name given by us above is 'mysql'
+	- Now  run a rest api container and link it to 'mysql' container as follows:
+		cmd: docker run --name sonymathew-todos-api --publish 8080:5000 --link mysql:mysql mailsonymathew/07-todo-rest-api-mysql-containerized:1.0.0.RELEASE
+-	- ** Note : the keyword 'link' is very important in teh above cmd.
+

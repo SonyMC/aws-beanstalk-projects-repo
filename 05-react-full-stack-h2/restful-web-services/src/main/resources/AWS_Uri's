@@ -1,0 +1,3 @@
+aws back end uri's:
+(1)POST authenticate: http://restapibackendfornodejsfrontend-env.eba-tpui9kui.us-east-1.elasticbeanstalk.com/authenticate
+(2) GET authenticate: •GET - http://restapibackendfornodejsfrontend-env.eba-tpui9kui.us-east-1.elasticbeanstalk.com/jpa/users/in28minutes/todos

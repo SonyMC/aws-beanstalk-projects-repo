@@ -1,0 +1,55 @@
+(1) Open MySQl Shell : 
+	- cmd: mysqlsh
+
+
+(2) Connect to a DB:
+	- cmd: \connect
+
+
+(4) Connect to a specific DB using user id , server,port  ( here user id is specifid while creatignteh docket mysql container)
+	-  - cmd: \connect username@localst:port -> port can be found fron running cmd: docker container list)
+	 E.g cmd: \connect todos-user@localhost:3306
+	- enter pwd specified while creating the docker container for mysql.
+	Note : Thsi wil lonly work if we have published teh port while creratign thedocker container
+	- set schema cmd : \use 'schema-name'
+			E.g. \use todos
+
+(5)Switch to SQL mode:
+	- cmd : \sql
+
+(6_0 SQL statements:
+	= cmd : select * from todos;
+
+
+(7) AWS Elastic Bean stak DB creds used: 
+	- user : todos
+	- pwd: dummytodos
+
+(8) Connect to SQL container:
+	- cmd: \connect dbname@dbendpoint ( both of these values can be gotten from Elastic Beanstalk UI -> Configuration-> Database
+	- cmd: \connect todos@aa75pmewg1tdxy.cr0i8ls2lyjx.us-east-1.rds.amazonaws.com:3306  
+
+(9) Specify schema on SQL container	
+	- cmd: \use schemaname ( schema name can be found in  AWS console-" services-> RDS-> Configuration card -> DB name
+	- cmd : \use ebdb
+
+(10) SQL mode :
+	- \sql 
+	- select * from todo;
+
+(11) Create RDS through RDS. Credentials given are: 
+	- DB name : todosstage
+	- DB instance identifier : todos-stage
+	- Master username given : todostageuser
+	- Master pwd : todostageuser
+	-RDS_HOSTNAME-todos-stage.cr0i8ls2lyjx.us-east-1.rds.amazonaws.com   ( is the end point that can be found in Amazon RDS -> connectivity and security -> end point and port 
+
+(12) Security Group of AWS app can be found in :
+	-> app-> configusration -> modify instances -> EC2 security group -? seelct securoty group which has a tick beside it.
+
+
+(13)
+
+	
+
+ 

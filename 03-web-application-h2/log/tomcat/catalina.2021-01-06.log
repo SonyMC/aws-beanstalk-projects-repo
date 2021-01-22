@@ -1,0 +1,49 @@
+06-Jan-2021 13:26:16.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.58
+06-Jan-2021 13:26:16.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 15 2020 21:08:30 UTC
+06-Jan-2021 13:26:16.913 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.58.0
+06-Jan-2021 13:26:16.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jan-2021 13:26:16.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.14.209-160.339.amzn2.x86_64
+06-Jan-2021 13:26:16.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jan-2021 13:26:16.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-amazon-corretto.x86_64
+06-Jan-2021 13:26:16.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.9.1+12-LTS
+06-Jan-2021 13:26:16.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+06-Jan-2021 13:26:16.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/share/tomcat
+06-Jan-2021 13:26:16.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/share/tomcat
+06-Jan-2021 13:26:16.916 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Jan-2021 13:26:17.031 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:26:17.076 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jan-2021 13:26:17.117 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1643 ms
+06-Jan-2021 13:26:17.260 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jan-2021 13:26:17.262 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.58
+06-Jan-2021 13:26:17.289 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/var/lib/tomcat/webapps/ROOT]
+06-Jan-2021 13:26:21.216 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jan-2021 13:26:32.189 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/var/lib/tomcat/webapps/ROOT] has finished in [14,898] ms
+06-Jan-2021 13:26:32.196 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:26:32.229 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 15111 ms
+06-Jan-2021 13:34:39.611 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:34:39.621 INFO [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jan-2021 13:34:39.776 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Jan-2021 13:34:39.809 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:34:39.812 INFO [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:34:42.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.58
+06-Jan-2021 13:34:42.132 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 15 2020 21:08:30 UTC
+06-Jan-2021 13:34:42.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.58.0
+06-Jan-2021 13:34:42.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jan-2021 13:34:42.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.14.209-160.339.amzn2.x86_64
+06-Jan-2021 13:34:42.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jan-2021 13:34:42.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-amazon-corretto.x86_64
+06-Jan-2021 13:34:42.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.9.1+12-LTS
+06-Jan-2021 13:34:42.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+06-Jan-2021 13:34:42.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/share/tomcat
+06-Jan-2021 13:34:42.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/share/tomcat
+06-Jan-2021 13:34:42.144 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Jan-2021 13:34:42.236 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:34:42.285 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jan-2021 13:34:42.320 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1470 ms
+06-Jan-2021 13:34:42.455 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jan-2021 13:34:42.456 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.58
+06-Jan-2021 13:34:42.480 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/var/lib/tomcat/webapps/ROOT]
+06-Jan-2021 13:34:46.362 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jan-2021 13:34:57.523 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/var/lib/tomcat/webapps/ROOT] has finished in [15,042] ms
+06-Jan-2021 13:34:57.529 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jan-2021 13:34:57.569 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 15247 ms
